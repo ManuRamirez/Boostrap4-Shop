@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Trabajo bootstrap">
+    <meta name="author" content="Manuel">
+    <script src="js/js.js"></script>
+
+    <title>Login/Registro De Manu Ramirez</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/tienda.css" rel="stylesheet">
+
+</head>
+
+<script src="https://use.fontawesome.com/c560c025cf.js"></script>
+
+
+<body class="bg-secondary">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark negro negro fixed-top">
+        <div class="container">
+            <a class="shinigami navbar-brand" href="index.html">Bankai Shop</a>
+            <a class="navbar-brand" href="index.html"><img src="img/wolf.png" width="50" height="50"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Productos</a>
+                    </li>
+                    <div class="dropdown show">
+                        <a class="btn negro dropdown-toggle greyito" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="category.html">Ordenador</a>
+                            <a class="dropdown-item" href="category.html">Portatil</a>
+                            <a class="dropdown-item" href="category.html">Accesorios</a>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login / Registro</a>
+                    </li>
+                    <li>
+                        <a href="cart.html" class="fas fa-shopping-cart fa-2x pr-4" style="color:white;"></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="row">
+
+        <div class=" mb-4 col-lg-6 col-sm-12 mb-4 pt-5 text-center rayita ">
+
+            <h2>LOGIN</h2>
+            
+
+            <form class="needs-validation" novalidate>
+                <div class="form-row d-flex justify-content-center">
+                  <div class="col-lg-6 col-md-6 mb-3">
+                    <label for="validationCustom01"><b>Introduce tu email o username</b></label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Introduce un email o nick de usuario correcto
+                    </div>
+                  </div>
+                </div>
+                  <div class="form-row d-flex justify-content-center">
+                  <div class="col-lg-6 mb-3">
+                    <label for="validationCustom02"><b>Introduce tu contaseña</b></label>
+                    <input type="password" class="form-control" id="validationCustom02" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Introduce una contraseña correcta
+                    </div>
+                  </div>
+                </div>
+ 
+                <!-- Button -->
+                <button class="btn btn-dark butoncito" type="submit">Logeate</button>
+              </form>
+
+
+
+
+
+        </div>
+
+        <div class=" mb-4 col-lg-6 col-sm-12 mb-4 pt-5 text-center">
+
+            <h2>REGISTRO</h2>
+            <div id="visible">
+                <h4>¿Aún no estás registrado? </h4><b>Crea una cuenta de usuario</b><br>
+                Para poder ingresar en Bankai Shop debes estar dado de alta con una cuenta de usuario y contar con un
+                nombre de usuario y una contraseña. Si aún no tienes estos datos puedes crearte una cuenta desde aqui
+                pulsando el siguiente boton:
+
+                <div id="butoncito"></div>
+                <button type="button" class="btn btn-dark butoncito" onclick="registro()">Registrate</button>
+
+            </div>
+                <div id="oculto">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom01"><b>Email</b></label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Introduce un email correcto
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom02"><b>Contraseña</b></label>
+                            <input type="password" class="form-control" id="validationCustom02" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Introduce una contraseña
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom02"><b>Repite la contraseña</b></label>
+                            <input type="password" class="form-control" id="validationCustom02" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                              Introduce tu contraseña correctamente
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustomUsername"><b>Nick de Usuario</b></label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                              <div class="invalid-feedback">
+                                Introduce un username valido
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row">
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Acepta los terminos y condiciones
+                            </label>
+                            <div class="invalid-feedback">
+                              Debes aceptar los terminos si quieres registrarte
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Button -->
+                        <button class="btn btn-dark butoncito" type="submit">Registrate</button>
+                      </form>
+                      
+                                
+
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+
+
+                </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 negro">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="shinigami text-uppercase">Dónde estamos situados</h5>
+                    <div class="col-md-3">
+                        <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 150px">
+                            <iframe src="https://maps.google.com/maps?q=IES Francesc de Borja Moll, Carrer Caracas, Palma de Mallorca, España&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="shinigami text-uppercase d-flex justify-content-center ">Redes Sociales</h5>
+
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li>
+                            <a href="#!" class=" iconito fab fa-facebook fa-2x" style="color:white;"></a>
+                            <a href="#!" class=" iconito fab fa-instagram fa-2x" style="color:white;"></a>
+                            <a href="#!" class=" iconito fab fa-whatsapp fa-2x" style="color:white;"></a>
+                            <a href="#!" class=" iconito fab fa-twitter fa-2x" style="color:white;"></a>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 mb-md-0 mb-3 ">
+
+                    <!-- Links -->
+                    <h5 class="shinigami text-uppercase d-flex justify-content-center">Links</h5>
+
+                    <ul class="desu list-unstyled d-flex justify-content-center">
+                        <li>
+                            <a href="#!">Política de Cookies</a><br>
+                            <a href="#!">Quiénes Somos</a><br>
+                            <a href="#!">Preguntas comunes</a><br>
+                            <a href="#!">Devoluciones</a><br>
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="shinigami footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> www.ManuelRamirez.es</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Baloo+Thambi|IBM+Plex+Sans|Lobster|Orbitron|Pathway+Gothic+One|Staatliches|ZCOOL+QingKe+HuangYou"
+        rel="stylesheet">
+
+
+</body>
+
+</html>

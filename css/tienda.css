@@ -1,0 +1,212 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ *
+ font-family: 'ZCOOL QingKe HuangYou', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Baloo Thambi', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'B612 Mono', monospace;
+font-family: 'Orbitron', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;*/
+ 
+body {
+  padding-top: 54px;
+  background-image: url("../img/pattern2.jfif");
+  background-repeat:repeat;
+}
+
+.carousel-control-prev{
+  padding-right:30px;
+}
+
+.carousel-control-next{
+  padding-right:80px;
+}
+.list-group img{
+  padding-top:40px;
+  padding-bottom:10px;
+}
+
+#wolf{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.shinigami{
+  font-family: 'Orbitron', sans-serif;
+  color:white;
+}
+.shinigami2{
+  font-family: 'Orbitron', sans-serif;
+}
+.desu{
+  font-size:20px;
+}
+
+.desu a{
+  color:white;
+}
+
+.iconito{
+  margin-left:10px;
+}
+
+.negro{
+  background-color:black;
+}
+.negrito{
+  color:black;
+}
+
+.greyito{
+  color:grey;
+}
+
+
+.quantity {
+  float: left;
+  margin-right: 15px;
+  background-color: #eee;
+  position: relative;
+  width: 80px;
+  overflow: hidden
+}
+
+.quantity input {
+  margin: 0;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  float: right;
+  color: #000;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  background-color: #F6F6F6
+}
+
+.quantity input.qty {
+  position: relative;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  padding: 10px 25px 10px 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 0;
+  background-clip: padding-box
+}
+
+.quantity .minus, .quantity .plus {
+  line-height: 0;
+  background-clip: padding-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-size: 6px 30px;
+  -moz-background-size: 6px 30px;
+  color: #bbb;
+  font-size: 20px;
+  position: absolute;
+  height: 50%;
+  border: 0;
+  right: 0;
+  padding: 0;
+  width: 25px;
+  z-index: 3
+}
+
+.quantity .minus:hover, .quantity .plus:hover {
+  background-color: #dad8da
+}
+
+.quantity .minus {
+  bottom: 0
+}
+.shopping-cart {
+  margin-top: 20px;
+}
+
+
+.custom-select{
+  background-color:transparent;
+  border:none;
+}
+
+.venta h4{
+  padding-top:30px;
+}
+
+.subcategorias list-group-item {
+padding-top:50px;
+}
+
+#butoncito{
+  padding-bottom:3%;
+}
+#oculto{
+  display:none;
+}
+
+.rayita{
+  border-right: 2px solid black;
+}
+
+.rayita2{
+  border-bottom: 2px solid black;
+}
+
+
+.left-inner-addon {
+  position: relative;
+}
+.left-inner-addon input {
+  padding-left: 22px;    
+}
+.left-inner-addon span {
+  position: absolute;
+  padding: 7px 12px;
+  pointer-events: none;
+}
+
+.right-inner-addon {
+  position: relative;
+}
+.right-inner-addon input {
+  padding-right: 30px;    
+}
+.right-inner-addon span {
+  position: absolute;
+  right: 0px;
+  padding: 7px 12px;
+  pointer-events: none;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 56px;
+  }
+  .carousel{
+    display:none;
+  }
+  .rayita{
+    padding-bottom:15%;
+    border-bottom: 2px solid black;
+  }
+}
